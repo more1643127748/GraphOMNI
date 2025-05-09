@@ -1,0 +1,23 @@
+[
+  {
+    "name-id": "triangle-easy-LTM-Adjacency Set-0",
+    "query": "\n Given a graph, your task is to determine how many triangles in this graph. \nGraph: Adjacency Set is \n{1: {0, 2, 3, 5, 6}, 3: {1, 4, 5, 6}, 0: {1, 4, 6}, 6: {0, 1, 2, 3, 4, 5}, 2: {1, 4, 5, 6}, 4: {0, 2, 3, 5, 6}, 5: {1, 2, 3, 4, 6}}\n\nQ: How many triangles are in this graph?\nA: Let's break down this problem:",
+    "gt_answer": "14",
+    "model_response": {
+      "Llama3.1": "yes"
+    },
+    "prompt_type": "LTM",
+    "task_type": "triangle",
+    "serialization_type": "Adjacency Set",
+    "graph_info": "[[0 1 0 0 1 0 1]\n [1 0 1 1 0 1 1]\n [0 1 0 0 1 1 1]\n [0 1 0 0 1 1 1]\n [1 0 1 1 0 1 1]\n [0 1 1 1 1 0 1]\n [1 1 1 1 1 1 0]]",
+    "graph_type": "ERM",
+    "graph_token": "139",
+    "model_extract": {
+      "Llama3.1": 0
+    },
+    "model_acc": {
+      "Llama3.1": 0
+    },
+    "difficulty": "easy"
+  }
+]
