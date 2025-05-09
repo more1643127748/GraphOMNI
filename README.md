@@ -44,7 +44,7 @@ Set environment variables:
 
 This project uses the python-dotenv library to manage environment variables. Please create a .env file to store sensitive information such as your Hugging Face token and OpenAI API key. These variables will be automatically loaded using load_dotenv().
 
-## 📁 Data
+## 📁 Data (available at [HF Repo](https://huggingface.co/datasets/G-A-I/GraphOmni))
 ```
 └── query
     ├── query_json 
@@ -68,13 +68,15 @@ difficulty: Difficulty level of the query
 
  
 ## Anwsering and evaluation 
-If you want to evaluate a specified combination of parameters (including Tasks Models Prompt Modes Serialization Formats and Difficulty), you can simply run  
+If you want to evaluate a specified combination of parameters (including Tasks, Models, Prompt Modes, Serialization Formats and Difficulty), you can simply run: (**It will load the dataset directly from the HF repo if you haven't done so**)
+
 ```
 python main.py
 ```
+
 The default parameters are “Llama3.1”, “easy” “LTM”, “Adjacency Set”, “cycle”. 
 
-To run evaluation on a specific parameter combination (task, model, prompt, serialization format, difficulty), use: 
+To run an evaluation on a specific parameter combination (task, model, prompt, serialization format, difficulty), use: 
 
 ```
 python main.py --model Llama3.1  --mode  easy --prompt LTM  --graph_representation  'Adjacency Set' --task  cycle
@@ -98,10 +100,10 @@ Results are saved in the following directories:
         ├── connectivity
         ...
  ```
-Each combination will be saved in the folder corresponding to `im_jsonfile`, and the result of the integration will be saved in the json file corresponding to task in `agg_jsonfile`.
+Each combination will be saved in the folder corresponding to `im_jsonfile`, and the result of the integration will be saved in the JSON file corresponding to the task in `agg_jsonfile`.
 
 
-**If you want to use the new llm model for evaluation, add the new load model and the relevant code for predict under predict.py**
+**If you want to use the new LLM model for evaluation, add the new load model and the relevant code for prediction under predict.py**
 ```
 └── openllm
     ├── predict.py
@@ -142,9 +144,9 @@ Each output .json file contains a list of dictionaries, where each entry corresp
 
 ### 🔒 Closed-Source Model Evaluation
 
-In our project, we used batchapi to evaluate some closed source models. The pipeline is as follows:
+In our project, we used batchapi to evaluate some closed-sourced models. The pipeline is as follows:
 
-If you want to evaluate a specified combination of parameters (including Tasks Models Prompt Modes Serialization Formats and Difficulty), you can simply run  
+If you want to evaluate a specified combination of parameters (including Tasks, Models, Prompt Modes, Serialization Formats and Difficulty), you can simply run  
 ```
 python batchapi_openai_6tasks.py
 ```
@@ -164,7 +166,7 @@ Results are saved in the following directories:
 
 The results will be in the ./closedllm/openailog/content/
 
-Then use 'python main_closemodel.py --task all' to add the results and evaluate the performance of the closed source model.
+Then use 'python main_closemodel.py --task all' to add the results and evaluate the performance of the closed-source model.
 
 Thank you can evaluate the results via the very first pipeline.
 
