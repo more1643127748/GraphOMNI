@@ -1,4 +1,4 @@
-# 🧠 GRAPHOMNI: A Benchmarking Framework for Graph Reasoning with LLMs
+# 🧠 GraphOmni: A Benchmarking Framework for Graph Reasoning with LLMs
 
 A benchmarking framework for evaluating large language models (LLMs) on fundamental graph reasoning tasks using a variety of prompts, serialization formats, and difficulty settings.
 
@@ -165,4 +165,3 @@ Then use 'python main_closemodel.py --task all' to add the results and evaluate 
 
 Thank you can evaluate the results via the very first pipeline.
 
-"# GraphOMNI" 
