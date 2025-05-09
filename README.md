@@ -144,12 +144,13 @@ In our project, we used batchapi to evaluate some closed source models. The pipe
 If you want to evaluate a specified combination of parameters (including Tasks Models Prompt Modes Serialization Formats and Difficulty), you can simply run  
 ```
 python batchapi_openai_6tasks.py
-`` and retrieve it using 
+```
+and retrieve it using 
 ```
 python batchapi_openai_6tasks_retrive.py
-```.
+```
 
-
+Results are saved in the following directories:
 ```
 └── closedllm
     ├── openailog
