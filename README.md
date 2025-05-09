@@ -1,6 +1,9 @@
-# 🧠 GraphOmni: A Benchmarking Framework for Graph Reasoning with LLMs
+# 🧠 GraphOmni: A Comprehensive and Extendable Benchmark Framework for Large Language Models on Graph-theoretic Tasks
 
-A benchmarking framework for evaluating large language models (LLMs) on fundamental graph reasoning tasks using a variety of prompts, serialization formats, and difficulty settings.
+[![arXiv](https://img.shields.io/badge/arXiv-2503.15661-b31b1b.svg)](https://arxiv.org/abs/2504.12764)
+[![Dataset](https://img.shields.io/badge/🤗%20Dataset-GraphOmni-yellow)](https://huggingface.co/datasets/G-A-I/GraphOmni)
+
+A benchmarking framework for evaluating large language models (LLMs) on fundamental graph reasoning tasks using a variety of synthetic graphs, prompt schemes, serialization formats, and difficulty settings.
 
 ---
 
@@ -16,13 +19,13 @@ This project provides a unified pipeline to test LLMs' ability to solve graph al
   `connectivity`, `bfsorder`, `triangle`, `diameter`, `cycle`, `shortest_path`, `all`
 
 - **Models**:  
-  `Llama3.1`, `Mistral`, `Phi-4`, `Qwen2.5`, `Qwen3-8B`
+  `Llama3.1`, `Mistral`, `Phi-4`, `Qwen2.5`, `Qwen3-8B`, ... (easily extendable)
 
 - **Prompt Modes**:  
-  `Algorithm`, `CoT`, `k-shot`, `Instruct`, `none`, `0-CoT`, `0-Instruct`, `0-Algorithm`, `LTM`
+  `Algorithm`, `CoT`, `k-shot`, `Instruct`, `none`, `0-CoT`, `0-Instruct`, `0-Algorithm`, `LTM`, ... (easily extendable)
 
 - **Serialization Formats**:  
-  `Graph Modelling Language`, `Adjacency Set`, `Edge Set`, `Edge List`, `Adjacency Matrix`, `Adjacency List`, `GraphML`()
+  `Graph Modelling Language`, `Adjacency Set`, `Edge Set`, `Edge List`, `Adjacency Matrix`, `Adjacency List`, `GraphML`, ... (easily extendable)
 
 - **Difficulty**:  
   `easy`, `medium`, `hard`
