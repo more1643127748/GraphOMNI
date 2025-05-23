@@ -2,7 +2,8 @@ import os
 import json
 import numpy as np
 import networkx as nx
-
+from transformers import AutoTokenizer, GPT2Tokenizer, LlamaTokenizer
+from transformers import logging
 
 from transformers import AutoTokenizer, GPT2Tokenizer, LlamaTokenizer
 from transformers import logging
@@ -43,12 +44,7 @@ def get_edges_from_str(matrix_str):
 
     return edges
 
-import os
-import json
-import numpy as np
-import networkx as nx
-from transformers import AutoTokenizer, GPT2Tokenizer, LlamaTokenizer
-from transformers import logging
+
 
 
 logging.set_verbosity_error()
@@ -75,9 +71,6 @@ def count_tokens(text):
     return max_token_count
 
 
-import numpy as np
-import networkx as nx
-import re  # 用于提取数字
 def create_adj_matrix(nodes, edges):
     n = len(nodes)
     adj_matrix = np.zeros((n, n), dtype=int)
@@ -88,12 +81,7 @@ def create_adj_matrix(nodes, edges):
     
     return adj_matrix
 def get_adjlist_from_str(matrix_str):
-    """
-    从字符串邻接矩阵解析并返回图的边列表。
-    
-    :param matrix_str: str, 
-    :return: list of tuples, 
-    """
+
 
 
     if matrix_str.strip() == "[]":
@@ -113,7 +101,7 @@ def get_adjlist_from_str(matrix_str):
 
     num_rows = len(matrix_list)
     if any(len(row) != num_rows for row in matrix_list):  
-        raise ValueError(f"解析后的矩阵不是方阵，行数: {num_rows}, 各行列数: {[len(row) for row in matrix_list]}")
+        raise ValueError(f" {[len(row) for row in matrix_list]}")
 
 
     matrix = np.array(matrix_list)
