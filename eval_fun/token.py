@@ -34,7 +34,7 @@ def get_edges_from_str(matrix_str):
 
     num_rows = len(matrix_list)
     if any(len(row) != num_rows for row in matrix_list):  
-        raise ValueError(f"解析后的矩阵不是方阵，行数: {num_rows}, 各行列数: {[len(row) for row in matrix_list]}")
+        raise ValueError(f"{[len(row) for row in matrix_list]}")
 
 
     matrix = np.array(matrix_list)
