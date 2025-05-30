@@ -2,8 +2,14 @@
 
 [![arXiv](https://img.shields.io/badge/arXiv-2503.15661-b31b1b.svg)](https://arxiv.org/abs/2504.12764)
 [![Dataset](https://img.shields.io/badge/🤗%20Dataset-GraphOmni-yellow)](https://huggingface.co/datasets/G-A-I/GraphOmni)
+[![GitHub](https://img.shields.io/badge/GitHub-GraphOmni-black?logo=github)](https://github.com/GAI-Community/GraphOmni)
+[![Website](https://img.shields.io/badge/🌐Website-GraphOmni-blue)](https://gai-community.github.io/Graph-Omni/)
+
 
 A benchmarking framework for evaluating large language models (LLMs) on fundamental graph reasoning tasks using a variety of synthetic graphs, prompt schemes, serialization formats, and difficulty settings.
+
+## 📢 News
+- **[30 May 2025]** The [latest GitHub repo](https://github.com/GAI-Community/GraphOmni) is online now.
 
 ---
 
